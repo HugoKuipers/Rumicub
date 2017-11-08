@@ -1,7 +1,9 @@
 "use strict";
 var jsonNameLists = nameLists;
+var markovData = {};
+var allGenNames = [];
 
-nameGen = function() {
+var nameGen = function() {
   var nameLength = 3 + Math.floor(Math.random()*7);
   var firstLetter = String.fromCharCode(65 + Math.floor(Math.random()*26));
   var vowelsCatOne = ["a", "e"];
@@ -99,7 +101,7 @@ nameGen = function() {
   };
 };
 
-createMarkovData = function(list, dataName) {
+var createMarkovData = function(list, dataName) {
   var firstLetters = {};
   var secondLetters = {};
   var letterCombos = {};
@@ -155,7 +157,7 @@ createMarkovData = function(list, dataName) {
     letterCombos: letterCombos
   };
 };
-markovNameGen = function(data) {
+var markovNameGen = function(data) {
   if(!(markovData[data])) {
     createMarkovData(jsonNameLists[data], data);
   };

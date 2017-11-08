@@ -1,0 +1,47 @@
+body {
+  background-color: rgba(107, 75, 36, 0.8);
+}
+
+.player-board {
+  text-align: center;
+  position: absolute;
+  background-color: rgb(23, 4, 3);
+}
+
+.p-b-h {
+  width: 60%;
+  height: 8%;
+}
+.p-b-v {
+  width: 6%;
+  height: 60%;
+}
+
+.p-b-north {
+  left: 20%;
+  top: 2%;
+}
+.p-b-west {
+  left: 3%;
+  top: 20%;
+}
+.p-b-west h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(270deg);
+}
+.p-b-east {
+  right: 3%;
+  top: 20%;
+}
+.p-b-east h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+.p-b-south {
+  left: 20%;
+  bottom: 5%;
+}

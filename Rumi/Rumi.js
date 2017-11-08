@@ -1,5 +1,6 @@
 "use strict";
 var amountOfPlayers = 4;
+var players = [];
 var decksAmount = 2;
 var takenSeats = [];
 var boardStones = [];
@@ -89,8 +90,14 @@ var Player = function(human, name, order, strength) {
   }
   else {
     this.order = order;
+    while(takenSeats.includes(this.order)) {
+      this.order = Math.ceil(Math.random()*amountOfPlayers);
+    }
   }
   this.hand = [];
 }
 
 console.log(pileStones);
+
+var guy = new Player();
+console.log(guy);
