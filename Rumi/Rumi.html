@@ -7,25 +7,32 @@
     <title>Rumicub</title>
   </head>
   <body>
-    <div class="player-board p-b-h p-b-north">
-      <h1>Player 1</h1>
-    </div>
+    <section id="entire-playfield">
+      <div class="player-board p-b-h p-b-north">
+        <h1>Player 1</h1>
+      </div>
 
-    <div class="player-board p-b-v p-b-west">
-      <h1>Player 2</h1>
-    </div>
+      <div class="player-board p-b-v p-b-west">
+        <h1>Player 2</h1>
+      </div>
 
-    <div class="game-board">
-      <p>Some testing text</p>
-    </div>
+      <div class="game-board">
+        <button class="btn btn-primary" id="setup-button">Setup</button>
+        <div class="panel panel-default setup-panel">
 
-    <div class="player-board p-b-v p-b-east">
-      <h1>Player 3</h1>
-    </div>
+          <button class="btn btn-success" id="start-button">Start</button>
+        </div>
+        <table class="table board-table" id="taby"></table>
+      </div>
 
-    <div class="player-board p-b-h p-b-south">
-      <h1>Speler</h1>
-    </div>
+      <div class="player-board p-b-v p-b-east">
+        <h1>Player 3</h1>
+      </div>
+
+      <div class="player-board p-b-h p-b-south">
+        <h1>Speler</h1>
+      </div>
+    </section>
 
     <script src="Vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

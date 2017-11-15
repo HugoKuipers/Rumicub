@@ -1,5 +1,56 @@
 body {
   background-color: rgba(107, 75, 36, 0.8);
+  overflow: hidden;
+}
+
+#entire-playfield {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(131, 76, 9, 0.8);
+  margin: auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.game-board {
+  position: absolute;
+  background-color: rgba(100, 207, 191, 0.8);
+  left: 12.5%;
+  right: 12.5%;
+  top: 12%;
+  bottom: 13%;
+  border: 1px black solid;
+  width: 75%;
+  height: 75%;
+}
+
+.board-table {
+  width: 100%;
+  height: 100%;
+}
+
+#taby td {
+  border: 0px;
+}
+
+#setup-button {
+  position: absolute;
+  width: 30%;
+  height: 8%;
+  top: 46%;
+  left: 35%;
+  z-index: 10;
+}
+
+.setup-panel {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 .player-board {
@@ -10,7 +61,7 @@ body {
 
 .p-b-h {
   width: 60%;
-  height: 8%;
+  height: 6%;
 }
 .p-b-v {
   width: 6%;
@@ -19,7 +70,7 @@ body {
 
 .p-b-north {
   left: 20%;
-  top: 2%;
+  top: 3%;
 }
 .p-b-west {
   left: 3%;
@@ -44,4 +95,8 @@ body {
 .p-b-south {
   left: 20%;
   bottom: 5%;
+}
+
+.invisible {
+  display: none;
 }
